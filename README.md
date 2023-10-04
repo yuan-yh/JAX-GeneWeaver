@@ -6,7 +6,7 @@
 
 **Document Repository**: https://github.com/yuan-yh/JAX-GeneWeaver
 
-**Team Proposal (TBD)**: https://docs.google.com/document/d/17qEHeylFt6ThuapZygZXUNvLmzfzNjj2rC1PpV2iTvk/edit?usp=sharing
+**Team Proposal (WILL BE COMPLETED LATER)**: https://docs.google.com/document/d/17qEHeylFt6ThuapZygZXUNvLmzfzNjj2rC1PpV2iTvk/edit?usp=sharing
 
 **Team contract**:
 https://docs.google.com/document/d/1nqIGKddytdJBRqTARRtW3JbWNPb4gNyA7POc9tDYoJM/edit?usp=sharing
