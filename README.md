@@ -8,6 +8,8 @@
 
 **Team Proposal (WILL BE COMPLETED LATER)**: https://docs.google.com/document/d/17qEHeylFt6ThuapZygZXUNvLmzfzNjj2rC1PpV2iTvk/edit?usp=sharing
 
+**Required Documentation (WILL BE COMPLETED LATER)**: https://docs.google.com/document/d/1FQkVkiSTnoVr9IiR0PhKYnk9hczZ19wCiuEXsvgONV4/edit?usp=sharing
+
 **Team contract**:
 https://docs.google.com/document/d/1nqIGKddytdJBRqTARRtW3JbWNPb4gNyA7POc9tDYoJM/edit?usp=sharing
 
