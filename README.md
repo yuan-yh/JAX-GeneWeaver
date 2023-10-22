@@ -15,3 +15,6 @@ https://docs.google.com/document/d/1nqIGKddytdJBRqTARRtW3JbWNPb4gNyA7POc9tDYoJM/
 
 **Team journal**:
 https://docs.google.com/document/d/1BageM1DAPPq-mbU1CmQ3jFVcC6lWLO0EUnSNBtY9xOI/edit?usp=sharing
+
+**Team Organization and Process Model Selection**:
+https://docs.google.com/document/d/1jNBsGh9B5vaEgp9MgfxTOLZ2PymoVEgEvToO7adcIAE/edit?usp=sharing
