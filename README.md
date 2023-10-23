@@ -10,11 +10,11 @@
 
 **Required Documentation (WILL BE COMPLETED BY 10/30)**: https://docs.google.com/document/d/1FQkVkiSTnoVr9IiR0PhKYnk9hczZ19wCiuEXsvgONV4/edit?usp=sharing
 
-**Team contract: COMPLETED BY 10/04/2023**:
+**Team contract - COMPLETED BY 10/04/2023**:
 https://docs.google.com/document/d/1nqIGKddytdJBRqTARRtW3JbWNPb4gNyA7POc9tDYoJM/edit?usp=sharing
 
-**Team journal: UPDATED BY 10/05/2023**:
+**Team journal - UPDATED BY 10/05/2023**:
 https://docs.google.com/document/d/1BageM1DAPPq-mbU1CmQ3jFVcC6lWLO0EUnSNBtY9xOI/edit?usp=sharing
 
-**Team Organization and Process Model Selection: COMPLETED BY 10/22/2023**:
+**Team Organization and Process Model Selection - COMPLETED BY 10/22/2023**:
 https://docs.google.com/document/d/1jNBsGh9B5vaEgp9MgfxTOLZ2PymoVEgEvToO7adcIAE/edit?usp=sharing
