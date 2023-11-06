@@ -18,3 +18,6 @@ https://docs.google.com/document/d/1BageM1DAPPq-mbU1CmQ3jFVcC6lWLO0EUnSNBtY9xOI/
 
 **Team Organization and Process Model Selection - COMPLETED BY 10/22/2023**:
 https://docs.google.com/document/d/1jNBsGh9B5vaEgp9MgfxTOLZ2PymoVEgEvToO7adcIAE/edit?usp=sharing
+
+**Software Design Documentation (WILL BE COMPLETED BY 11/13/2023)**:
+https://docs.google.com/document/d/1WdLCj7MD1JzKI8Ehyf17oXpsJt1j9FNiS3Uky8RF9VE/edit?usp=sharing
