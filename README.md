@@ -6,9 +6,9 @@
 
 **Document Repository**: https://github.com/yuan-yh/JAX-GeneWeaver
 
-**Team Proposal (WILL BE COMPLETED BY 10/23)**: https://docs.google.com/document/d/17qEHeylFt6ThuapZygZXUNvLmzfzNjj2rC1PpV2iTvk/edit?usp=sharing
+**Team Proposal - COMPLETED BY 10/23**: https://docs.google.com/document/d/17qEHeylFt6ThuapZygZXUNvLmzfzNjj2rC1PpV2iTvk/edit?usp=sharing
 
-**Required Documentation (WILL BE COMPLETED BY 10/30)**: https://docs.google.com/document/d/1FQkVkiSTnoVr9IiR0PhKYnk9hczZ19wCiuEXsvgONV4/edit?usp=sharing
+**Software Requirements Specification - COMPLETED BY 11/05**: https://docs.google.com/document/d/1FQkVkiSTnoVr9IiR0PhKYnk9hczZ19wCiuEXsvgONV4/edit?usp=sharing
 
 **Team contract - COMPLETED BY 10/04/2023**:
 https://docs.google.com/document/d/1nqIGKddytdJBRqTARRtW3JbWNPb4gNyA7POc9tDYoJM/edit?usp=sharing
