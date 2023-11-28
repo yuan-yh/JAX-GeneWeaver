@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: geneweaver-core
+Version: 0.6.3a0
+Summary: The core of the Jax-Geneweaver Python library
+Home-page: https://bergsalex.github.io/geneweaver-docs/
+License: Apache-2.0
+Author: Jax Computational Sciences
+Author-email: cssc@jax.org
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: numpy (>=1.22,<1.24)
+Requires-Dist: openpyxl (>=3.1.2,<4.0.0)
+Requires-Dist: pandas (>=1.5,<2.1)
+Requires-Dist: pydantic[dotenv] (>=1.10.7,<2.0.0)
+Project-URL: Repository, https://bitbucket.org/jacksonlaboratory/geneweaver-core
+Description-Content-Type: text/markdown
+
+# Geneweaver Core
+The Geneweaver Core Python library provides shared foundational functionality for the Geneweaver project. 
+It is a dependency of all other Geneweaver Python libraries, and is not intended to be used directly.
+
+## Installation
+The Geneweaver Core library is available on PyPI and can be installed with pip:
+```bash
+pip install geneweaver-core
+```
+
+If you are using Poetry, you can add the Geneweaver Core library to your project with:
+```bash
+poetry add geneweaver-core
+```
+
+## Overview
+This package is structured so as to share an import path with other `geneweaver` packages. This allows you to install
+the package and import it without having to worry about the package name. For example, if you install the `geneweaver-core`
+package, as well as the `geneweaver-db` package, you can import the `geneweaver` package and access both libraries:
+```python
+from geneweaver import core, db
+```
+
+The Geneweaver Core library provides the following functionality:
+* `geneweaver.core.schema`: Pydantic schema definitions
+* `geneweaver.core.enum`: Enumerations
+
+
+* `geneweaver.core.config`: Configuration management
+  * `GeneweaverBaseSettings`: Base Settings class to inherit from for your own package's configuration classes
+  * `GeneweaverCoreSettings`: Configuration class for Geneweaver Core settings
+
+
+* `geneweaver.core.exc`: Geneweaver shared exceptions
+  * `GeneweaverException`: Base exception class for Geneweaver
+  * `GeneweaverError`: Base error class for Geneweaver
+  * `GeneweaverWarning`: Base warning class for Geneweaver
+
+* `geneweaver.core.pase`: Geneweaver file parsing functionality
+  * `batch`: Functions for parsing a batch file
+  * `score`: Functions for parsing a score
+  * `csv`: Functions for parsing a CSV file
+  * `xlsx`: Functions for parsing an Excel file
+  * `enum`: Enumerations for file parsing
+  * `exceptions`: Exceptions for file parsing
+  * `utils`: Utility functions for file parsing
+
+#### Planned Functionality
+* `geneweaver.core.logging`: Shared logging management
+* `geneweaver.core.utils`: Shared utility functions
+
+
+## Acknowledgements
+This project was developed by the Computational Systems and Synthetic Biology Center at the Jackson Laboratory in
+conjunction with the Baylor University Computational Biology and Bioinformatics Program.
+
+

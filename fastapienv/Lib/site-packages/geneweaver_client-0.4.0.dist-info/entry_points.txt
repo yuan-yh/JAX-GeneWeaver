@@ -1,0 +1,4 @@
+[console_scripts]
+gweave=geneweaver.client.cli.main:cli
+gweaver=geneweaver.client.cli.main:cli
+

@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: geneweaver-tools
+Version: 0.0.1a1
+Summary: A framework to allow for consistent implementation of tools for the GeneWeaver project.
+Home-page: https://bergsalex.github.io/geneweaver-docs/
+License: Apache-2.0
+Author: Alexander Berger
+Author-email: alexander.berger@jax.org
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: geneweaver-core (>=0.6.0a0,<0.7.0)
+Requires-Dist: pydantic (>=1.10.7,<2.0.0)
+Project-URL: Repository, https://github.com/bergsalex/geneweaver-tools
+Description-Content-Type: text/markdown
+
+# Geneweaver Tools Package
+
+This package contains the tools namespace, and the framework that is used to create
+analysis tools for the GeneWeaver project.

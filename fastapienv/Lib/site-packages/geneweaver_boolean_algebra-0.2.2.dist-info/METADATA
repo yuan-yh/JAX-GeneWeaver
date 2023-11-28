@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: geneweaver-boolean-algebra
+Version: 0.2.2
+Summary: Geneweaver's Boolean Algebra Tool
+Home-page: https://bergsalex.github.io/geneweaver-docs/
+License: Apache-2.0
+Author: Alexander Berger
+Author-email: alexander.berger@jax.org
+Requires-Python: >=3.9,<3.13
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: geneweaver-core (>=0.6.3a0,<0.7.0)
+Requires-Dist: geneweaver-tools (>=0.0.1a1,<0.0.2)
+Requires-Dist: jupyter (>=1.0.0,<2.0.0)
+Requires-Dist: scipy (>=1.11.2,<2.0.0)
+Project-URL: Repository, https://github.com/bergsalex/geneweaver-boolean-algebra
+Description-Content-Type: text/markdown
+
+# Geneweaver - Boolean Algebra Tool
+
+[![Tests](https://github.com/TheJacksonLaboratory/geneweaver-boolean-algebra/actions/workflows/tests.yml/badge.svg?event=push)](https://github.com/TheJacksonLaboratory/geneweaver-boolean-algebra/actions/workflows/tests.yml)
+[![Style](https://github.com/TheJacksonLaboratory/geneweaver-boolean-algebra/actions/workflows/style.yml/badge.svg?event=push)](https://github.com/TheJacksonLaboratory/geneweaver-boolean-algebra/actions/workflows/style.yml)
+[![Coverage](https://github.com/TheJacksonLaboratory/geneweaver-boolean-algebra/actions/workflows/coverage.yml/badge.svg?event=push)](https://github.com/TheJacksonLaboratory/geneweaver-boolean-algebra/actions/workflows/coverage.yml)
+
+The Boolean Algebra Tool performs basic set operations on at least two Gene Sets.
+Results are displayed as lists of genes belonging to one of the three different types of
+set operations: Union, Intersect, and Symmetric Difference. Furthermore, results allow
+users to quickly determine new relationships between Gene Sets and create a new Gene Set
+based on set-derived findings.
+
+## Installation
+
+### From PyPI
+
+#### pip
+```bash
+pip install geneweaver-boolean-algebra
+```
+
+#### poetry
+```bash
+poetry add geneweaver-boolean-algebra
+```
+
+### From Source
+
+Installing from source requires python 3.9 and [poetry](https://python-poetry.org/).
+
+```bash
+git clone git@github.com:TheJacksonLaboratory/geneweaver-boolean-algebra.git
+cd geneweaver-boolean-algebra
+poetry install
+```
+
+## Usage
+
+See usage example in [Geneweaver Docs](https://thejacksonlaboratory.github.io/geneweaver-docs/tutorial/nci_60_example_01/#run-a-genweaver-tool-locally).
