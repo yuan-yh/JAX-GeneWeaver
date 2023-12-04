@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analysis Run App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #apiResponse {
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            background-color: white;
+            padding: 10px;
+            text-align: left;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 200px;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Analysis Run Dashboard</h2>
+        <button id="createRun">Create Analysis Run</button>
+        <button id="getAllRuns">Get All Runs</button>
+        <input type="text" id="runIdInput" placeholder="Enter Run ID">
+        <button id="getRunStatus">Get One Run</button>
+        <button id="deleteRun">Cancel Run</button>
+
+        <div id="apiResponse"></div>
+    </div>
+
+    <script>
+        function handleApiResponse(response) {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        }
+
+        function displayResult(data) {
+            document.getElementById('apiResponse').innerText = JSON.stringify(data, null, 2);
+        }
+
+        document.getElementById('createRun').addEventListener('click', function() {
+            fetch('http://127.0.0.1:8000/runs', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    url: 'https://discover.nci.nih.gov/cellminer/loadDownload.do'
+                })
+            })
+            .then(handleApiResponse)
+            .then(displayResult)
+            .catch(error => console.error('Error:', error));
+        });
+
+        document.getElementById('getAllRuns').addEventListener('click', function() {
+            fetch('http://127.0.0.1:8000/runs', {
+                method: 'GET'})
+                .then(handleApiResponse)
+                .then(displayResult)
+                .catch(error => console.error('Error:', error));
+        });
+
+        document.getElementById('getRunStatus').addEventListener('click', function() {
+            const runId = document.getElementById('runIdInput').value;
+            fetch(`http://127.0.0.1:8000/runs/${runId}`, {
+                method: 'GET'})
+                .then(handleApiResponse)
+                .then(displayResult)
+                .catch(error => console.error('Error:', error));
+        });
+
+        document.getElementById('deleteRun').addEventListener('click', function() {
+            const runId = document.getElementById('runIdInput').value;
+            fetch(`http://127.0.0.1:8000/runs/${runId}`, {
+                method: 'DELETE'
+            })
+            .then(handleApiResponse)
+            .then(displayResult)
+            .catch(error => console.error('Error:', error));
+        });
+    </script>
+</body>
+</html>
