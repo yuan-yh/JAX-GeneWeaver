@@ -40,26 +40,24 @@
                     <div class="text-center">
                         <h1 class="mx-auto my-0 text-uppercase">RESTful API</h1>
                         <h2 class="text-white-50 mx-auto mt-2 mb-5">I solemnly swear that I am up to no {"status code": 400, "detail": "Bad Request"}</h2>
-                        <a class="btn btn-primary" href="#model">Get Started</a>
+                        <a class="btn btn-primary" href="#techstack">Get Started</a>
                     </div>
                 </div>
             </div>
         </header>
 
         <!-- About-->
-        <section class="about-section text-center" id="model">
+        <section class="about-section text-center" id="techstack">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
-                        <h2 class="text-white mb-4">Process Model</h2>
+                        <h2 class="text-white mb-4">Tech Stack</h2>
                         <p class="text-white-50">
-                            Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-                            The theme is open source, and you can use it for any purpose, personal or commercial.
-                        </p>
-                        <h2 class="text-white mb-4">Process Model</h2>
-                        <p class="text-white-50">
-                            Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-                            The theme is open source, and you can use it for any purpose, personal or commercial.
+                            Frontend: HTML / CSS / JavaScript
+                            <br/><br/>
+                            Backend: Python / FastAPI / Uvicorn
+                            <br/><br/>
+                            Database: SQLite
                         </p>
                     </div>
                 </div>
@@ -72,7 +70,7 @@
             <div class="container px-4 px-lg-5">
                 <!-- Featured Project Row-->
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="..." /></div>
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/architecture.jpg" alt="..." /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Architecture</h4>
@@ -82,34 +80,86 @@
                 </div>
                 <!-- Project One Row-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
-                    <div class="col-lg-6">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Misty</h4>
-                                    <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
-                                </div>
+                    <div class="bg-black text-center h-100 project">
+                        <h2 class="text-white">Analysis Run Dashboard</h2>
+                        <div class="project-text w-100 my-auto text-center text-lg-right">-->
+                            <input type="text" id="runIdInput" placeholder="Enter Run ID">
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <a class="btn btn-primary" id="createRun">Create Run</a>
+                            </div>
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <a class="btn btn-primary" id="getAllRuns">Get All Runs</a>
+                            </div>
+<!--                            <div class="project-text w-100 my-auto text-center text-lg-right">-->
+<!--                                <input type="text" id="runIdInput" placeholder="Enter Run ID">-->
+<!--                            </div>-->
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <a class="btn btn-primary" id="getRunStatus">Get One Run</a>
+                            </div>
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <a class="btn btn-primary" id="deleteRun">Cancel Run</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Project Two Row-->
-                <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
-                    <div class="col-lg-6 order-lg-first">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Mountains</h4>
-                                    <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well!</p>
-                                </div>
-                            </div>
+
+<!--                <div class="row gx-0 justify-content-center">-->
+<!--&lt;!&ndash;                    <input type="text" id="runIdInput" placeholder="Enter Run ID">&ndash;&gt;-->
+<!--                    <div class="bg-black text-center h-100 project">-->
+<!--                        <div class="d-flex h-100">-->
+<!--                            <div class="project-text w-100 my-auto text-center text-lg-left">-->
+<!--                                <input type="text" id="runIdInput" placeholder="Enter Run ID">-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+                <div class="row gx-0 mb-5 mb-lg-0">
+                    <div class="h-100 project">
+                        <div class="d-flex h-100" id="apiResponse">
+<!--                            <div  id="apiResponse"></div>-->
                         </div>
                     </div>
                 </div>
+
+
+
+<!--                &lt;!&ndash; Project One Row&ndash;&gt;-->
+<!--                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">-->
+<!--                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>-->
+<!--                    <div class="col-lg-6">-->
+<!--                        <div class="bg-black text-center h-100 project">-->
+<!--                            <div class="d-flex h-100">-->
+<!--                                <div class="project-text w-100 my-auto text-center text-lg-left">-->
+<!--                                    <h4 class="text-white">Misty</h4>-->
+<!--                                    <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                &lt;!&ndash; Project Two Row&ndash;&gt;-->
+<!--                <div class="row gx-0 justify-content-center">-->
+<!--                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>-->
+<!--                    <div class="col-lg-6 order-lg-first">-->
+<!--                        <div class="bg-black text-center h-100 project">-->
+<!--                            <div class="d-flex h-100">-->
+<!--                                <div class="project-text w-100 my-auto text-center text-lg-right">-->
+<!--                                    <h4 class="text-white">Mountains</h4>-->
+<!--                                    <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well!</p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
             </div>
         </section>
+
         <!-- Signup-->
         <section class="signup-section" id="signup">
             <div class="container px-4 px-lg-5">
@@ -198,6 +248,61 @@
         </section>
         <!-- Footer-->
         <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Yueheng Yuan 2023</div></footer>
+
+        <script>
+        function handleApiResponse(response) {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        }
+
+        function displayResult(data) {
+            document.getElementById('apiResponse').innerText = JSON.stringify(data, null, 2);
+        }
+
+        document.getElementById('createRun').addEventListener('click', function() {
+            fetch('http://127.0.0.1:8000/runs', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    url: 'https://discover.nci.nih.gov/cellminer/loadDownload.do'
+                })
+            })
+            .then(handleApiResponse)
+            .then(displayResult)
+            .catch(error => console.error('Error:', error));
+        });
+
+        document.getElementById('getAllRuns').addEventListener('click', function() {
+            fetch('http://127.0.0.1:8000/runs', {
+                method: 'GET'})
+                .then(handleApiResponse)
+                .then(displayResult)
+                .catch(error => console.error('Error:', error));
+        });
+
+        document.getElementById('getRunStatus').addEventListener('click', function() {
+            const runId = document.getElementById('runIdInput').value;
+            fetch(`http://127.0.0.1:8000/runs/${runId}`, {
+                method: 'GET'})
+                .then(handleApiResponse)
+                .then(displayResult)
+                .catch(error => console.error('Error:', error));
+        });
+
+        document.getElementById('deleteRun').addEventListener('click', function() {
+            const runId = document.getElementById('runIdInput').value;
+            fetch(`http://127.0.0.1:8000/runs/${runId}`, {
+                method: 'DELETE'
+            })
+            .then(handleApiResponse)
+            .then(displayResult)
+            .catch(error => console.error('Error:', error));
+        });
+    </script>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
