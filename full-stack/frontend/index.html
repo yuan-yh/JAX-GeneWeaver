@@ -26,7 +26,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#techstack">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
                     </ul>
@@ -74,7 +74,8 @@
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Architecture</h4>
-                            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+                            <p class="text-black-50 mb-0">The FastAPI receives requests from the frontend user interface and handles business logics. Analysis runs are stored in a light-weight local sq-lite database
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -250,6 +251,15 @@
         <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Yueheng Yuan 2023</div></footer>
 
         <script>
+        function displayError(message) {
+            // Select the 'apiResponse' element
+            const apiResponseElement = document.getElementById('apiResponse');
+
+            // Set the error message with some styling to differentiate from regular results
+            apiResponseElement.innerHTML = `<div style="color: red;">Error: ${message}</div>`;
+        }
+
+
         function handleApiResponse(response) {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -281,16 +291,32 @@
                 method: 'GET'})
                 .then(handleApiResponse)
                 .then(displayResult)
-                .catch(error => console.error('Error:', error));
+                .catch(error => {
+                    console.error('Error:', error);
+                    displayError(error.message);
+                });
         });
+
 
         document.getElementById('getRunStatus').addEventListener('click', function() {
             const runId = document.getElementById('runIdInput').value;
             fetch(`http://127.0.0.1:8000/runs/${runId}`, {
                 method: 'GET'})
-                .then(handleApiResponse)
-                .then(displayResult)
-                .catch(error => console.error('Error:', error));
+                .then(response => {
+                if (!response.ok) {
+                    if (response.status === 404) {
+                        throw new Error('Run not found. Please check the ID.');
+                    } else {
+                        throw new Error('An error occurred while fetching the run status.');
+                    }
+                }
+                return response.json();
+            })
+            .then(displayResult)
+            .catch(error => {
+                console.error('Error:', error);
+                displayError(error.message);
+            });
         });
 
         document.getElementById('deleteRun').addEventListener('click', function() {
