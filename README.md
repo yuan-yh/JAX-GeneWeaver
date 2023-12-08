@@ -4,7 +4,9 @@
 
 **Team Member**: Yueheng Yuan, Xinyan Liu
 
-**Document Repository**: https://github.com/yuan-yh/JAX-GeneWeaver
+**Document Repository**: 
+https://github.com/yuan-yh/JAX-GeneWeaver
+https://github.com/xinyan30425/geneweaver_api2
 
 **Team Proposal - COMPLETED BY 10/23**: https://docs.google.com/document/d/17qEHeylFt6ThuapZygZXUNvLmzfzNjj2rC1PpV2iTvk/edit?usp=sharing
 
