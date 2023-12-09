@@ -25,3 +25,6 @@ https://docs.google.com/document/d/1jNBsGh9B5vaEgp9MgfxTOLZ2PymoVEgEvToO7adcIAE/
 
 **Software Design Documentation - COMPLETED BY 11/13/2023**:
 https://docs.google.com/document/d/1WdLCj7MD1JzKI8Ehyf17oXpsJt1j9FNiS3Uky8RF9VE/edit?usp=sharing
+
+**Team Evaluation of Project - COMPLETED BY 12/10/2023**:
+https://docs.google.com/document/d/1R1yjItRslLFB8emzK5QCnxGdUFJLq9rbmgALb3DZSg0/edit?usp=sharing
