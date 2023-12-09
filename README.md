@@ -31,3 +31,6 @@ https://docs.google.com/document/d/1VuxGvTnx7ev8ix4nSP6vm7s8MGcMO2j1VS2muckUIBA/
 
 **Team Evaluation of Project - COMPLETED BY 12/10/2023**:
 https://docs.google.com/document/d/1R1yjItRslLFB8emzK5QCnxGdUFJLq9rbmgALb3DZSg0/edit?usp=sharing
+
+**Individual Contribution Assessment - COMPLETED BY 12/10/2023**:
+https://docs.google.com/document/d/1kWIyC5SdkwtZcQeJt4aSzhv9HMa9CfTV5rbAm4mNwBA/edit?usp=sharing
